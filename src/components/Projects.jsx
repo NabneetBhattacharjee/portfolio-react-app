@@ -12,7 +12,7 @@ const Projects = () => {
             Projects
           </p>
           <p className="py-6">
-            //Check out some of my projects. More coming soon.
+            Check out some of my projects. More coming soon.
           </p>
         </div>
 
