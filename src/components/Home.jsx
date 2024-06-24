@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/heroimage.jpg";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -19,15 +20,20 @@ const Home = () => {
             Welcome to my portfolio website!
           </p>
           <div>
-            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#5ce1e6] hover:border-[#5ce1e6]">
+            <Link
+              to="about"
+              smooth
+              duration={300}
+              className="text-white w-fit group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#5ce1e6] hover:border-[#5ce1e6]"
+            >
               Click here to learn more about me
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-3" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
-        <div>
+        <div className="p-8">
           <img
             src={HeroImage}
             alt="my profile"
