@@ -77,6 +77,42 @@ const Navbar = () => {
             Projects
           </Link>
         </li>
+        <li className="py-6 text-4xl">
+          <a
+            className="flex justify-between items-center w-full text-gray-300"
+            href="/resume.pdf"
+            download={true}
+          >
+            My resume
+          </a>
+        </li>
+        <li className="py-6 text-4xl">
+          <a
+            className="flex justify-between items-center w-full text-gray-300"
+            href="https://www.linkedin.com/in/nabneet-bhattacharjee/"
+          >
+            LinkedIn
+            <FaLinkedin className="px-2 size={30}" />
+          </a>
+        </li>
+        <li className="py-6 text-4xl">
+          <a
+            className="flex justify-between items-center w-full text-gray-300"
+            href="https://github.com/NabneetBhattacharjee"
+          >
+            GitHub
+            <FaGithub className="px-2 size={30}" />
+          </a>
+        </li>
+        <li className="py-6 text-4xl">
+          <a
+            className="flex justify-between items-center w-full text-gray-300 px-2"
+            href="mailto:navneet.bhattacharjee@gmail.com"
+          >
+            Email
+            <SiGmail className="px-2 size={30}" />
+          </a>
+        </li>
       </ul>
 
       {/*Social media icons*/}
